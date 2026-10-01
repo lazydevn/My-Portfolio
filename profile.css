@@ -1,0 +1,217 @@
+.profile-page {
+  background: var(--paper);
+  min-height: 100vh;
+}
+.profile-main {
+  padding: 8rem clamp(1.25rem, 7vw, 7rem) 0;
+}
+.profile-hero {
+  display: grid;
+  grid-template-columns: 1fr 0.72fr;
+  gap: 8vw;
+  align-items: end;
+  padding-bottom: 7rem;
+  border-bottom: 1px solid var(--line);
+}
+.profile-hero h1 {
+  font: 800 clamp(5rem, 11vw, 11rem)/0.78 var(--condensed);
+  letter-spacing: -0.04em;
+  margin: 0 0 2rem;
+}
+.profile-hero h1 em {
+  color: var(--blue);
+  font-style: normal;
+}
+.profile-lede {
+  max-width: 28rem;
+  font: 500 clamp(1.2rem, 2vw, 1.6rem)/1.1 var(--condensed);
+  margin: 0;
+  color: #383d3f;
+}
+.profile-intro {
+  max-width: 31rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.7;
+}
+.profile-photo {
+  width: 100%;
+  height: 470px;
+  object-fit: cover;
+  filter: grayscale(0.1);
+  box-shadow: 12px 12px 0 var(--blue);
+}
+.profile-section {
+  padding: 6rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.profile-section:last-child {
+  border-bottom: 0;
+}
+.profile-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+.profile-section-heading h2 {
+  font: 800 clamp(3rem, 6vw, 6rem)/0.8 var(--condensed);
+  letter-spacing: -0.04em;
+  margin: 0;
+}
+.profile-section-heading h2 em {
+  color: var(--blue);
+  font-style: normal;
+}
+.profile-section-heading > span {
+  font: 500 0.65rem var(--mono);
+  color: var(--blue);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.profile-card {
+  padding: 1.5rem;
+  min-height: 240px;
+  background: var(--blue);
+  color: white;
+}
+.profile-card:nth-child(2) {
+  background: var(--ink);
+}
+.profile-card:nth-child(3) {
+  background: #cad4d7;
+  color: var(--ink);
+}
+.profile-card:nth-child(4) {
+  background: #e1b766;
+  color: var(--ink);
+}
+.profile-card span,
+.profile-row span {
+  font: 500 0.62rem var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.profile-card h3 {
+  font: 600 2rem/0.9 var(--condensed);
+  margin: 4rem 0 1rem;
+}
+.profile-card p {
+  font-size: 0.75rem;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 25rem;
+}
+.profile-row {
+  display: grid;
+  grid-template-columns: 130px 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+  padding: 1.4rem 0;
+  border-top: 1px solid var(--line);
+}
+.profile-row h3 {
+  font: 600 1.35rem/0.95 var(--condensed);
+  margin: 0;
+}
+.profile-row p {
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0;
+  max-width: 27rem;
+}
+.photo-band {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+.photo-band img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+.contact-block {
+  background: var(--ink);
+  color: var(--paper);
+  margin: 0 calc(clamp(1.25rem, 7vw, 7rem) * -1);
+  padding: 6rem clamp(1.25rem, 7vw, 7rem);
+  text-align: center;
+}
+.contact-block h2 {
+  font: 800 clamp(4.5rem, 10vw, 10rem)/0.78 var(--condensed);
+  letter-spacing: -0.04em;
+  margin: 1rem 0 1.6rem;
+}
+.contact-block h2 em {
+  color: var(--blue);
+  font-style: normal;
+}
+.contact-block p {
+  color: #aeb4b5;
+  max-width: 28rem;
+  margin: 0 auto 2rem;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+.contact-button {
+  display: inline-block;
+  padding: 1rem 1.25rem;
+  background: var(--blue);
+  color: #fff;
+  font: 500 0.7rem var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.contact-button:hover {
+  background: #fff;
+  color: var(--ink);
+}
+@media (max-width: 700px) {
+  .profile-main {
+    padding-top: 6rem;
+  }
+  .profile-hero {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding-bottom: 5rem;
+  }
+  .profile-photo {
+    height: 370px;
+    width: 83%;
+    margin-left: auto;
+  }
+  .profile-section {
+    padding: 4rem 0;
+  }
+  .profile-section-heading {
+    display: block;
+  }
+  .profile-section-heading > span {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+  .profile-row {
+    grid-template-columns: 70px 1fr;
+    gap: 1rem;
+  }
+  .profile-row p {
+    grid-column: 2;
+  }
+  .photo-band img {
+    height: 190px;
+  }
+  .contact-block {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}

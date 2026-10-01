@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500&display=swap");
+.profile-page {
+  --paper: #f1eadc;
+  --ink: #28352d;
+  --white: #28352d;
+  --blue: #b65c43;
+  --muted: #657067;
+  --line: #cfc5b3;
+  --condensed: "Bebas Neue", "Barlow Condensed", Impact, sans-serif;
+  background: var(--paper);
+  background-image: linear-gradient(
+    105deg,
+    rgba(184, 151, 91, 0.08),
+    transparent 35%,
+    rgba(73, 92, 71, 0.08) 100%
+  );
+}
+.profile-page:before {
+  display: none;
+}
+.profile-page:after {
+  display: none;
+}
+.profile-main,
+.editorial-footer {
+  position: relative;
+  z-index: 1;
+}
+.profile-hero h1,
+.profile-section-heading h2,
+.contact-block h2 {
+  font-family: var(--condensed);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+.profile-hero h1 em,
+.profile-section-heading h2 em,
+.contact-block h2 em {
+  color: var(--blue);
+}
+.blue-label,
+.profile-section-heading > span,
+.profile-card span,
+.profile-row span {
+  color: var(--blue);
+}
+.profile-lede {
+  font-family: var(--condensed);
+  font-size: clamp(1.4rem, 2.3vw, 1.9rem);
+  letter-spacing: 0.02em;
+  color: #3d4b41;
+}
+.profile-photo {
+  box-shadow: 12px 12px 0 #87977c;
+  filter: saturate(0.88) sepia(0.08);
+}
+.profile-section {
+  position: relative;
+}
+.profile-section:before {
+  content: attr(data-index);
+  position: absolute;
+  right: 0;
+  top: 5.7rem;
+  font: 400 clamp(5rem, 12vw, 12rem)/0.7 var(--condensed);
+  color: rgba(182, 92, 67, 0.09);
+  pointer-events: none;
+}
+.profile-section-heading h2 {
+  font-size: clamp(3.2rem, 6vw, 6.4rem);
+}
+.profile-card {
+  border-radius: 0;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+.profile-card:nth-child(1) {
+  background: #b65c43;
+}
+.profile-card:nth-child(2) {
+  background: #30463b;
+}
+.profile-card:nth-child(3) {
+  background: #9eac91;
+  color: var(--ink);
+}
+.profile-card:nth-child(4) {
+  background: #d9ae63;
+  color: var(--ink);
+}
+.profile-card:after {
+  content: "Ã¢â€ â€”";
+  color: currentColor;
+}
+.profile-card:hover {
+  transform: translateY(-5px) rotate(-1deg);
+  box-shadow: 8px 8px 0 rgba(40, 53, 45, 0.18);
+}
+.profile-row {
+  transition: transform 0.25s ease;
+}
+.profile-row:hover {
+  transform: translateX(8px);
+}
+.photo-band img {
+  filter: saturate(0.82) sepia(0.1);
+}
+.contact-block {
+  background: #30463b;
+}
+.contact-block:before {
+  color: rgba(241, 234, 220, 0.06);
+}
+.contact-button {
+  background: #d9ae63;
+  color: var(--ink);
+}
+.contact-button:hover {
+  background: #f1eadc;
+}
+.editorial-kicker:hover,
+.editorial-footer a:hover {
+  color: var(--blue);
+}
+@media (max-width: 700px) {
+  .profile-page:before {
+    display: none;
+  }
+  .profile-section:before {
+    top: 4rem;
+    font-size: 6rem;
+  }
+  .profile-row:hover {
+    transform: none;
+  }
+  .profile-photo {
+    box-shadow: 8px 8px 0 #87977c;
+  }
+}

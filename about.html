@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>About Neha | Portfolio</title>
+    <meta
+      name="description"
+      content="Overview of Neha Basumatary, a Computer Science and Engineering student."
+    />
+    <link rel="stylesheet" href="editorial.css" />
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="profile-enhance.css" />
+    <link rel="stylesheet" href="about-polish.css" />
+    <link rel="stylesheet" href="section-pages.css" />
+    <link rel="stylesheet" href="page-transition.css" />
+    <style>
+      .overview-main {
+        max-width: 1300px;
+      }
+      .overview-copy {
+        max-width: 38rem;
+      }
+      .overview-copy h1 {
+        margin-bottom: 1.5rem;
+      }
+      .overview-copy h1 em {
+        color: var(--blue);
+        font-style: normal;
+      }
+      .overview-copy p {
+        color: var(--muted);
+        line-height: 1.8;
+      }
+      .overview-copy .overview-lede {
+        color: var(--ink);
+        font: 500 clamp(1.25rem, 2.3vw, 1.8rem)/1.15 var(--condensed);
+      }
+      .overview-notes {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+        margin-top: 3rem;
+      }
+      .overview-note {
+        padding: 1.25rem;
+        border-top: 1px solid var(--line);
+      }
+      .overview-note strong {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: var(--blue);
+        font: 500 0.65rem var(--mono);
+        text-transform: uppercase;
+      }
+      .overview-note span {
+        color: var(--ink);
+        font-size: 0.85rem;
+        line-height: 1.5;
+      }
+      .contact-info {
+        margin-top: 5rem;
+        padding: 2rem 0;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+      .contact-info h2 {
+        margin: 0 0 1.5rem;
+        color: var(--ink);
+        font: 400 clamp(3rem, 7vw, 6rem)/0.85 var(--condensed);
+      }
+      .contact-links {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.8rem 2rem;
+      }
+      .contact-link {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        color: var(--ink);
+        font: 0.78rem var(--mono);
+      }
+      .contact-link:hover {
+        color: var(--blue);
+      }
+      .contact-icon {
+        flex: 0 0 2.35rem;
+        display: inline-grid;
+        place-items: center;
+        width: 2.35rem;
+        height: 2.35rem;
+        border: 1px solid currentColor;
+        color: var(--blue);
+        font: 500 0.68rem var(--mono);
+        letter-spacing: -0.03em;
+      }
+      @media (max-width: 700px) {
+        .overview-notes {
+          grid-template-columns: 1fr;
+        }
+        .contact-links {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="editorial-page profile-page">
+      <header class="section-header">
+        <a href="index.html">NB / portfolio</a>
+        <nav class="section-nav">
+          <a href="about.html">profile</a>
+          <a href="education.html">education</a>
+          <a href="skills.html">skills</a>
+          <a href="experience.html">experience</a>
+          <a href="personal.html">personal</a>
+        </nav>
+      </header>
+      <main class="profile-main overview-main">
+        <section class="profile-hero">
+          <div class="overview-copy">
+            <p class="blue-label">overview</p>
+            <h1>ABOUT<br /><em>ME</em></h1>
+            <p class="overview-lede">
+              I am Neha, a Computer Science and Engineering student building
+              thoughtful technology for real-world problems.
+            </p>
+            <p>
+              I am interested in Artificial Intelligence, Machine Learning,
+              software development, and modern web technologies. I enjoy
+              learning by making, exploring ideas through projects, and turning
+              complex problems into useful experiences.
+            </p>
+          </div>
+          <img
+            class="profile-photo"
+            src="images/cap.jpeg"
+            alt="Neha wearing a graduation cap"
+          />
+        </section>
+        <section class="contact-info" aria-label="Contact information">
+          <h2>CONTACT<br />INFO</h2>
+          <div class="contact-links">
+            <a class="contact-link" href="https://linkedin.com/in/nbasumatary"
+              ><span class="contact-icon" aria-hidden="true">in</span
+              >linkedin.com/in/nbasumatary</a
+            >
+            <a class="contact-link" href="https://github.com/lazydevn"
+              ><span class="contact-icon" aria-hidden="true">GH</span
+              >github.com/lazydevn</a
+            >
+            <a class="contact-link" href="mailto:nehabasumatarynb55@gmail.com"
+              ><span class="contact-icon" aria-hidden="true">@</span
+              >nehabasumatarynb55@gmail.com</a
+            >
+            <a class="contact-link" href="tel:+919577876113"
+              ><span class="contact-icon" aria-hidden="true">TEL</span>+91 95778
+              76113</a
+            >
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="section-footer">
+      <span>CONTACT</span><a href="education.html">next / education -&gt;</a>
+    </footer>
+  </body>
+</html>
+<script src="page-transition.js"></script>

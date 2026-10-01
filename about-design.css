@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+.profile-page {
+  --paper: #eef1eb;
+  --ink: #18333a;
+  --white: #18333a;
+  --blue: #087f8c;
+  --muted: #5d6e70;
+  --line: #c6d2cd;
+  --condensed: "Space Grotesk", sans-serif;
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(
+      135deg,
+      rgba(8, 127, 140, 0.11) 0 18%,
+      transparent 18.2% 72%,
+      rgba(239, 107, 46, 0.08) 72.2% 100%
+    ),
+    linear-gradient(rgba(24, 51, 58, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(24, 51, 58, 0.045) 1px, transparent 1px);
+  background-size:
+    auto,
+    42px 42px,
+    42px 42px;
+}
+.profile-page:before {
+  content: "NB";
+  position: fixed;
+  z-index: 0;
+  left: 3vw;
+  top: 38%;
+  font:
+    700 clamp(8rem, 20vw, 20rem)/0.8 "Space Grotesk",
+    sans-serif;
+  letter-spacing: -0.08em;
+  color: rgba(8, 127, 140, 0.07);
+  pointer-events: none;
+}
+.profile-page:after {
+  content: "";
+  position: fixed;
+  z-index: 0;
+  right: 4vw;
+  top: 18%;
+  width: 18vw;
+  height: 18vw;
+  border: 1px solid rgba(239, 107, 46, 0.28);
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+.profile-main,
+.editorial-footer {
+  position: relative;
+  z-index: 1;
+}
+.profile-hero h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.07em;
+  line-height: 0.82;
+}
+.profile-hero h1 em {
+  color: #ef6b2e;
+  text-shadow: 5px 5px 0 rgba(8, 127, 140, 0.13);
+}
+.profile-photo {
+  box-shadow: 14px 14px 0 #ef6b2e;
+  border-radius: 0;
+}
+.profile-section {
+  position: relative;
+}
+.profile-section:before {
+  font-family: "Space Grotesk", sans-serif;
+  color: rgba(8, 127, 140, 0.11);
+}
+.profile-section-heading h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.06em;
+}
+.profile-section-heading h2 em {
+  color: #ef6b2e;
+}
+.profile-row {
+  background: rgba(238, 241, 235, 0.58);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+.profile-row:hover {
+  background: rgba(255, 255, 255, 0.65);
+  transform: translateX(7px);
+}
+.profile-skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.profile-skills-list p {
+  margin: 0;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.48);
+  font-size: 0.78rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+.profile-skills-list strong {
+  display: block;
+  margin-bottom: 0.55rem;
+  color: #ef6b2e;
+  font: 600 0.65rem var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.certificate-row p {
+  line-height: 1.8;
+}
+.contact-block {
+  position: relative;
+  overflow: hidden;
+  background: #18333a;
+}
+.contact-block:after {
+  content: "";
+  position: absolute;
+  width: 24rem;
+  height: 24rem;
+  right: -8rem;
+  top: -9rem;
+  border: 1px solid rgba(239, 107, 46, 0.55);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 1.4rem rgba(8, 127, 140, 0.16),
+    0 0 0 3rem rgba(239, 107, 46, 0.08);
+}
+.contact-block > * {
+  position: relative;
+  z-index: 1;
+}
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.contact-links a {
+  border: 1px solid rgba(238, 241, 235, 0.35);
+  padding: 0.8rem 1rem;
+  color: #eef1eb;
+  font: 500 0.65rem var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.contact-links a:hover {
+  background: #ef6b2e;
+  color: #18333a;
+}
+.contact-details {
+  max-width: 42rem;
+  margin: 2rem auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.35rem 2rem;
+  text-align: left;
+}
+.contact-details p {
+  margin: 0;
+  color: #b8c6c4;
+  font-size: 0.72rem;
+}
+.contact-details strong {
+  color: #ef6b2e;
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-right: 0.4rem;
+}
+@media (max-width: 700px) {
+  .profile-page:before {
+    font-size: 8rem;
+    left: 1rem;
+    top: 34%;
+  }
+  .profile-page:after {
+    width: 32vw;
+    height: 32vw;
+    right: -5vw;
+    top: 16%;
+  }
+  .profile-hero h1 {
+    font-size: clamp(4.8rem, 19vw, 7rem);
+  }
+  .profile-skills-list {
+    grid-template-columns: 1fr;
+  }
+  .profile-row:hover {
+    transform: none;
+  }
+  .contact-details {
+    grid-template-columns: 1fr;
+  }
+  .contact-links {
+    justify-content: flex-start;
+  }
+}
