@@ -1,0 +1,92 @@
+<script src="page-transition.js"></script>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Skills | Neha Basumatary</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      :root {
+        --page-accent: #176b87;
+        --page-shadow: #70a9aa;
+        --page-paper: #edf5f2;
+        --page-ink: #173b4a;
+      }
+      .section-page:before {
+        background-image:
+          linear-gradient(
+            115deg,
+            rgba(23, 107, 135, 0.06) 1px,
+            transparent 1px
+          ),
+          linear-gradient(25deg, rgba(63, 126, 105, 0.045) 1px, transparent 1px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section-page">
+      <header class="section-header">
+        <a href="index.html">NB / portfolio</a>
+        <nav class="section-nav">
+          <a href="about.html">profile</a><a href="education.html">education</a
+          ><a href="experience.html">experience</a
+          ><a href="personal.html">personal</a>
+        </nav>
+      </header>
+      <main class="section-main">
+        <div class="section-intro">
+          <div>
+            <p class="section-kicker">02 / complete toolkit</p>
+            <h1 class="section-title">SKILLS</h1>
+            <p class="section-summary">
+              A practical toolkit for turning ideas into useful software, from
+              data and machine learning to web systems and cloud tools.
+            </p>
+          </div>
+          <figure class="clipboard">
+            <img
+              src="images/specs holding.jpeg"
+              alt="Neha wearing glasses outdoors"
+            />
+            <figcaption class="clipboard-note">
+              curiosity / in progress
+            </figcaption>
+          </figure>
+        </div>
+        <div class="section-list">
+          <article class="section-item">
+            <span class="section-item-label">programming</span>
+            <h2>C, C++, Python, Java, JavaScript, SQL</h2>
+            <p>
+              Comfortable moving between problem solving, scripting, and
+              application development.
+            </p>
+          </article>
+          <article class="section-item">
+            <span class="section-item-label">web development</span>
+            <h2>HTML, Tailwind CSS, Flask, Node.js, Express.js</h2>
+            <p>Building clear interfaces and practical backend flows.</p>
+          </article>
+          <article class="section-item">
+            <span class="section-item-label">data / ai</span>
+            <h2>NumPy, Pandas, Matplotlib, Seaborn</h2>
+            <p>
+              Exploring analysis, visualization, machine learning algorithms,
+              and clustering.
+            </p>
+          </article>
+          <article class="section-item">
+            <span class="section-item-label">cloud / tools</span>
+            <h2>Docker, Azure, AWS, Git, VS Code, Firebase</h2>
+            <p>Tools for developing, testing, collaborating, and shipping.</p>
+          </article>
+        </div>
+      </main>
+      <footer class="section-footer">
+        <span>Neha Basumatary</span
+        ><a href="experience.html">next / experience -&gt;</a>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,51 +1,47 @@
-# CS Student Portfolio (code-editor theme)
+# Portfolio Website
 
-A single-page portfolio styled like a code editor: tabs across the top act as
-navigation, sections are laid out like files (`about.md`, `projects.json`,
-`skills.yml`, `history.log`, `contact.sh`), and the hero renders your intro
-as a syntax-highlighted object.
+This project is a personal portfolio website for Neha Basumatary, designed to present my background, academic journey, skills, experience, and personal interests in a clean and modern digital format.
 
-## Files
-- `index.html` — all content and structure
-- `style.css` — all styling (dark editor theme, responsive, no build step)
-- `script.js` — scroll-based tab highlighting + section reveal animation
+## What this project shows
 
-No frameworks, no build tools — just open `index.html` in a browser.
+The website acts as an online profile and CV, showing:
 
-## How to make it yours
+- A welcoming landing page with a polished editorial-style design
+- A profile section introducing who I am and my academic focus
+- Education information and career/learning timeline
+- Skills and technical areas I am interested in or working on
+- Experience and project-related highlights
+- Personal information and contact details
 
-1. **Name and tagline** — in `index.html`, search for `ALEX CHEN` and the
-   `hero-object` block and replace with your name, role, focus, and city.
-2. **About** — edit the paragraph inside `<section id="about">` and the
-   four stats in `.stat-list`.
-3. **Projects** — each project is a `.repo-card` inside `<section id="projects">`.
-   Duplicate a card, change the name, description, tags, and the `href` on
-   `.repo-link` to point at your actual GitHub repo or live demo.
-   - Language dot colors already used: TypeScript `#3178c6`, Python `#3572A5`,
-     C `#555555`, JavaScript `#f1e05a` — reuse these or match GitHub's actual
-     language colors for others.
-4. **Skills** — edit the pills inside `<section id="skills">`. Group them
-   however makes sense for you (languages / frameworks / tools / coursework).
-5. **History / timeline** — each `.commit` in `<section id="log">` is one
-   milestone (school, internship, hackathon, etc). Keep them in chronological
-   order — that's the one section where order actually matters.
-6. **Contact** — replace the email address and links in `<section id="contact">`.
-7. **Favicon / title** — update `<title>` in the `<head>`.
+The goal is to make my work and profile easy to explore visually while keeping the design professional and memorable.
 
-## Deploying it for free
+## Languages and technologies used
 
-The easiest option for a student portfolio is **GitHub Pages**:
+This portfolio was built using:
 
-1. Create a new repo on GitHub, e.g. `yourname.github.io`.
-2. Push these three files (`index.html`, `style.css`, `script.js`) to it.
-3. In the repo settings → Pages, set the source to the `main` branch.
-4. Your site will be live at `https://yourname.github.io` within a minute or two.
+- HTML5 for the website structure and content
+- CSS3 for layout, color, typography, animations, and responsive design
+- JavaScript for interactive behavior and page transitions
+- Multiple CSS files for styling different sections and visual themes
 
-Alternatively, drag-and-drop the folder into **Netlify** or **Vercel** for
-an instant deploy with a shareable link.
+## Project structure
 
-## Notes
-- Colors and fonts are defined as CSS variables at the top of `style.css`
-  (`:root { ... }`) if you want to shift the palette.
-- The page respects `prefers-reduced-motion` and has visible keyboard focus
-  states built in.
+- `index.html` — main landing page
+- `about.html` — profile information
+- `education.html` — academic background
+- `skills.html` — technical skills
+- `experience.html` — experience and related work
+- `personal.html` — personal details
+- `style.css` and other CSS files — visual styling and page design
+- `page-transition.js` — page interaction and transitions
+- `images/` — images and portfolio assets
+
+## How to view it
+
+Open `index.html` in a browser to view the website locally.
+
+If you want to publish it online, you can deploy it using GitHub Pages, Netlify, or Vercel.
+
+## Summary
+
+This portfolio is a personal web project that showcases my identity as a Computer Science and Engineering student, with a design that reflects creativity, technology, and a modern digital presence. It was built primarily with HTML, CSS, and JavaScript.
